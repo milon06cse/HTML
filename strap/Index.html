@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Bootstrap Layout</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+	<link href="css/bootstrap-responsive.min.css" rel="stylesheet">
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  </head>
+<body>
+<div class="container-fluid" style="background-color:Scrollbar;font-weight:bold">
+Bootstrap Intro for interns...
+</div>
+    <div class="navbar">
+        <div class="navbar-inner" style="background-color: whitesmoke; border-style: ridge">
+            <ul class="nav nav-tabs">
+                <li><a href="#">ProjectName</a></li>
+                <li><a href="#">Home</a></li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Dropdown Menu<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">SubMenu 1</a></li>
+                        <li><a href="#">SubMenu 2</a></li>
+                        <li><a href="#">SubMenu 3</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">About </a></li>
+                <li><a href="#">Contract Us </a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row-fluid">
+            <div class="span2">
+                <ul class="nav table-bordered">
+                    <li><a  style="color:black" href="#">Side Nav1</a></li>
+                    <li><a href="#"  style="color:black">Side nav2</a></li>
+                    <li><a href="#"  style="color:black">Side nav3</a></li>
+                    <li><a href="#"  style="color:black">side nav4</a></li>
+                    <li><a href="#"  style="color:black">side nav5</a></li>
+                </ul>
+            </div>
+            <div class="span7">
+                <table class="table table-header table-hover table-bordered">
+                    <caption style="text-align:left;font-size:x-large;font-stretch:wider">User List</caption>
+                    <thead>
+                        <th>SL</th>
+                        <th>FirstName</th>
+                        <th>LastName</th>
+                        <th>UserName</th>
+                    </thead>
+                    <tbody class="nth-child">
+                        <tr>
+                            <td class="nth-child">1</td>
+                            <td>Md</td>
+                            <td>hasan</td>
+                            <td>mhasan</td>
+                        </tr>
+                        <tr>
+                            <td class="nth-child">2</td>
+                            <td>Mizanur</td>
+                            <td>Rahman</td>
+                            <td>Milon</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div style="width: 40%">
+                    <table class="thumbnails">
+                        <caption style="text-align:left;font-size:x-large;font-stretch:wider">Add New User</caption>
+                        <thead>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>UserName</td>
+                                <td>
+                                    <input type="text"></td>
+                            </tr>
+                            <tr>
+                                <td>FirstName</td>
+                                <td>
+                                    <input type="text"></td>
+                            </tr>
+                            <tr>
+                                <td>LastName</td>
+                                <td>
+                                    <input type="text"></td>
+                            </tr>
+                            <tr>
+                                <td>Address</td>
+                                <td>
+                                    <textarea class="pre-scrollable" style="min-height:80px"></textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Country</td>
+                                <td>
+                                    <select>
+                                        <option>Select Your Country</option>
+                                        <option>BGD</option>
+                                        <option>USA</option>
+                                        <option>CAN</option>
+                                    </select>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Gender</td>
+                                <td>
+                                    <input class="radio" type="radio" name="radio-group" id="1" value="1">Male
+						        	<input class="radio" type="radio" name="radio-group" id="2" value="2">Female
+                                </td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>
+                                    <button type="button" class="btn-info">Save</button><space>   </space>
+                                    <button type="button" class="btn-danger">Cancel</button></td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                        </tfoot>
+                    </table>
+                </div>
+            </div>
+            <div class="span3 table-fluid" style="background-color: #DDE0E0; border-color: red">
+                <form>
+                    <table class="table-hover table-fluid table-bordered">
+                        <header class="table-header" style="text-align: center; color: green"><strong>Use Your Accoount</strong></header>
+                        <tr class="bordered" style="text-align: right">User Id</tr>
+                        <tr>
+                            <input type="text" style="border-color: green; width: 90%">
+                        </tr>
+                        <tr class="row-bordered" style="text-align: right">Password</tr>
+                        <tr>
+                            <input type="password" style="border-color: green; width: 90%">
+                        </tr>
+                        <div class="row-fluid">
+                            <label class="checkbox">
+                                <input type="checkbox">
+                                Remaind Me</label>
+                            <button type="button" class="btn-success" style="">Login</button>
+                        </div>
+                    </table>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
